@@ -14,8 +14,8 @@
 
   <body cz-shortcut-listen="true">
     <div class="bg-video" aria-hidden="true">
-      <video id="altVideo" autoplay muted playsinline loop preload="auto">
-        <source src="videos/856077-hd_1920_1080_24fps.mp4" type="video/mp4">
+      <video id="altVideo" autoplay muted playsinline loop preload="auto" onloadedmetadata="this.playbackRate=0.25;">
+        <source src="videos/background.mp4" type="video/mp4">
         <img src="images/fallback.jpg" alt="Kazak cover fallback">
       </video>
     </div>
@@ -63,7 +63,7 @@
           <h1>Our Mission</h1>
           <h3>--- on site repair ---</h3>
           <p>I can come to you, you can bring it to me. Your Place our Mine, Spy
-            ware Removal. See our warning signs page</p>
+            ware Removal. See our <a href="warning.html" style="color: #ffffff;">warning signs page</a></p>
           <p>Computer running slow? Come to me before it's too late</p>
           <p>Virus removal at your place or mine.....</p>
           <p>IT management! Contract with us to make sure the backup you did

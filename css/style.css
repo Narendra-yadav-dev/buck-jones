@@ -493,7 +493,11 @@ input::placeholder {
 .information-details h3 {
     color: #ffffff;
 }
+.information-details a {
+    color: #ffffff;
+}
 .information-details ul li {
+    list-style: none;
     color: #ffffff;
 }
 

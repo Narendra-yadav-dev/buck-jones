@@ -249,9 +249,7 @@ button:hover {
 
 .about-author {
     width: 100vw;
-    /* margin-top: 100px; */
     max-height: max-content;
-    min-height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -301,10 +299,12 @@ section#contact {
 }
 
 .about-text {
-    width: 79%;
-    margin-left: 40px;
+    width: 80%;
+    margin-left: 10%;
 }
-
+.about-image-wrapper{
+    margin-right: 3%;
+}
 img.about-image {
     margin-left: 10px;
 }
@@ -408,7 +408,7 @@ input::placeholder {
 
 .support-section {
     padding: 100px 0;
-    min-height: 100vh;
+    max-height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,14 +426,18 @@ input::placeholder {
 .support-section h2 {
     text-align: center;
     font-size: 2.8rem;
-    margin-bottom: 30px;
     font-weight: 600;
 }
 
 .support-section p {
     line-height: 1.8;
     font-size: 1.1rem;
-    margin-bottom: 16px;
+    color: #e0e0e0;
+}
+.support-section h4 {
+    color: #e0e0e0;
+}
+.support-section ul li {
     color: #e0e0e0;
 }
 
@@ -486,6 +490,12 @@ input::placeholder {
     margin: 0 auto 20px;
     line-height: 1.6;
 }
+.information-details h3 {
+    color: #ffffff;
+}
+.information-details ul li {
+    color: #ffffff;
+}
 
 .email-links a {
     display: block;
@@ -535,7 +545,7 @@ input::placeholder {
 .about-author-1,
 .contact-form-1 {
     width: 100%;
-    height: auto;
+    max-height: max-content;
     align-items: center;
 }
 
@@ -568,6 +578,7 @@ input::placeholder {
 
     p {
         line-height: normal;
+        font-size: 15px !important;
     }
 
 
@@ -649,7 +660,12 @@ input::placeholder {
     .about-author {
         margin-top: "10px";
     }
-
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
     /* .banner{
         width: 95%;
         text-align: center;
@@ -679,7 +695,7 @@ input::placeholder {
     }
 
     p {
-        font-size: 18px;
+        font-size: 20px !important;
     }
 
     .about-author {
@@ -866,7 +882,7 @@ input::placeholder {
     }
 
     p {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 30px;
     }
 
@@ -882,7 +898,7 @@ input::placeholder {
     .about-author,
     .contact-form,
     .information {
-        min-height: auto;
+        max-height: max-content;
         padding: 50px 0;
     }
 

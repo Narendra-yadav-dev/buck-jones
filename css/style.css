@@ -1,0 +1,943 @@
+/*
+|--------------------------------------------------------------------------
+| BUCK JONES - COMPLETE RESPONSIVE CSS
+|--------------------------------------------------------------------------
+| This file contains all global, header, typography, and content styles
+| for the Home, About, Contact, Support, and Information pages,
+| along with comprehensive media queries for full device responsiveness.
+*/
+
+
+/* --- GLOBAL AND BACKGROUND STYLES (Default / Desktop) --- */
+
+body {
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    /* Define font families used across the site */
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.bg-video {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bg-video video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(1) contrast(1);
+}
+
+/* --- REUSABLE TYPOGRAPHY & ELEMENTS --- */
+
+h1,
+h2,
+h3 {
+    font-family: "playfair display", serif;
+    /* Assuming 'display fair' refers to Playfair Display */
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    /* font-size: 40px; */
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    line-height: 35px;
+    color: white;
+}
+
+button {
+    width: 200px;
+    height: 44px;
+    color: black;
+    max-width: 350px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "poppins", sans-serif;
+    text-transform: uppercase;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background ease-in-out .3s;
+}
+
+button:hover {
+    background: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.outlined-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.outlined-btn:hover {
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.button-tab {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+/* Utility Classes */
+.spacer-15 {
+    height: 20vh;
+}
+
+.spacer-5 {
+    height: 10vh;
+}
+
+.fw {
+    font-weight: 300;
+}
+
+.mb {
+    margin-top: 1rem;
+}
+
+.center {
+    align-items: center;
+}
+
+.a-f {
+    width: 40% !important;
+    height: 60% !important;
+}
+
+
+/* --- HEADER & NAVIGATION STYLES --- */
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 111;
+}
+
+.header-con {
+    width: 95%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.329);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.logo P {
+    font-size: 2.5rem;
+    font-family: "playfair display", serif;
+    font-weight: 900;
+    margin: 0;
+    color: white;
+    white-space: nowrap;
+}
+
+.mobile-menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 2rem;
+    display: none;
+    /* Hidden by default on desktop */
+}
+
+.mobile-menu-btn img {
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+}
+
+.nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+
+.mv-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav>.mv-menu>a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+}
+
+/* --- HOME PAGE SECTIONS (.banner) --- */
+
+.banner {
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-con {
+    margin-top: 15px;
+    width: 88%;
+    padding-left: 37px;
+    border-radius: 10px;
+    background-color: #000000;
+    /* Dark background for the content box */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-text {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* --- ABOUT PAGE SECTION (.about-author) --- */
+
+.about-author {
+    width: 100vw;
+    max-height: max-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-author-tab {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.329);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    gap: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.about-author-1 {
+    width: 60%;
+    height: 95%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.about-author-2 {
+    width: 30%;
+    min-width: 250px;
+    min-height: 350px;
+    height: 95%;
+}
+
+section#contact {
+    /* padding-left: 20px; */
+    width: 100%;
+}
+
+.about-author-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-text {
+    width: 80%;
+    margin-left: 10%;
+}
+.about-image-wrapper{
+    margin-right: 3%;
+}
+img.about-image {
+    margin-left: 10px;
+}
+
+/* --- CONTACT PAGE SECTION (.contact-form) --- */
+
+.contact-form {
+    width: 100vw;
+    max-height: max-content;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.contact-form-tab {
+    /* width: 90%; */
+    /* height: 90%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.329);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    gap: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.contact-form-1 {
+    width: 60%;
+    height: 95%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contact-form-2 {
+    width: 30%;
+    min-width: 250px;
+    min-height: 350px;
+    height: 95%;
+}
+
+.contact-form-1 h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.form-container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: white;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+input::placeholder {
+    color: white;
+    opacity: .7;
+    text-transform: capitalize;
+}
+
+/* --- SUPPORT PAGE SECTION (.support-section) --- */
+
+.support-section {
+    padding: 100px 0;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support-section .container {
+    max-width: 1164px;
+    margin: 25px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.329);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.support-section h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.support-section p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+.support-section h4 {
+    color: #e0e0e0;
+}
+.support-section ul li {
+    color: #e0e0e0;
+}
+
+.support-question {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 50px 0 20px;
+    font-family: "playfair display";
+}
+
+.support-answer-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.support-answer-list li {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+    font-family: "poppins";
+}
+
+/* --- INFORMATION PAGE SECTION (.information) --- */
+
+.information {
+    padding: 100px 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.information-details p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+.information-details h3 {
+    color: #ffffff;
+}
+.information-details ul li {
+    color: #ffffff;
+}
+
+.email-links a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 15px 0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1.8rem;
+}
+
+.email-links a:hover {
+    color: #cccccc;
+}
+
+/* ------------------------------------------------------------------ */
+/* --- MEDIA QUERIES (Mobile-First Overrides, then Max-Width Tweaks)---*/
+/* ------------------------------------------------------------------ */
+
+.banner-con {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 0;
+}
+
+.banner-text {
+    width: 90%;
+}
+
+.button-tab {
+    flex-direction: column;
+    gap: 1rem;
+    align-self: center;
+}
+
+.a-f {
+    width: 90% !important;
+    height: 40% !important;
+}
+
+.about-author-tab,
+.contact-form-tab {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.about-author-1,
+.contact-form-1 {
+    width: 100%;
+    max-height: max-content;
+    align-items: center;
+}
+
+.about-author-2,
+.contact-form-2 {
+    width: 90%;
+    min-width: 250px;
+    min-height: 300px;
+    height: 350px;
+    margin: 20px 0 0 0;
+}
+
+
+/* 1. Min Width 600px (Small Devices / Portrait Tablets) */
+@media only screen and (min-width: 600px) {
+    .banner-con {
+        width: 90%;
+        flex-direction: row;
+    }
+    .banner {
+        width: 100vw;
+        margin-left: 0px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .nav>.mv-menu>a {
+        font-size: 1rem;
+    }
+
+    p {
+        line-height: normal;
+        font-size: 15px !important;
+    }
+
+
+}
+
+/* 2. Min Width 768px (Medium Devices / Landscape Tablets) */
+@media only screen and (min-width: 768px) {
+
+    .about-author-tab,
+    .contact-form-tab {
+        flex-direction: row;
+        margin-top: 42px;
+    }
+
+    .about-author-1,
+    .contact-form-1 {
+        width: 60%;
+        align-items: flex-start;
+    }
+
+    .about-author-2,
+    .contact-form-2 {
+        width: 30%;
+        margin: 0;
+    }
+
+    .contact-form-1 h1 {
+        font-size: 40px;
+    }
+
+    .support-section {
+        padding: 0px;
+    }
+
+    .information {
+        padding: 38px 0;
+    }
+
+    /* section#contact {
+        padding-left: 50px;
+    } */
+
+    .banner {
+        width: 92vw;
+          /* margin-left: 30px; */
+    }
+}
+
+
+/* 3. Min Width 992px (Large Devices / Laptops) */
+@media only screen and (min-width: 992px) {
+
+    /* Header/Nav restoration */
+    .nav {
+        display: flex;
+        width: 50%;
+        margin-right: 2rem;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    .logo {
+        width: 200px;
+        height: 50px;
+        margin-left: 1rem;
+    }
+
+    .nav>.mv-menu>a {
+        font-size: 1.1rem;
+    }
+
+    /* Banner/Float adjustments */
+    .banner-text {
+        width: 50%;
+    }
+
+    .about-author {
+        margin-top: "10px";
+    }
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+    /* .banner{
+        width: 95%;
+        text-align: center;
+    } */
+}
+
+/* 4. Min Width 1200px (Extra Large Desktops) */
+@media only screen and (min-width: 1200px) {
+    .header-con {
+        max-width: 1600px;
+        width: 90%;
+    }
+
+    .about-author-tab,
+    .contact-form-tab {
+        max-width: 1600px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+
+    .about-author {
+        margin-top: 30px;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* --- MAX-WIDTH TWEAKS (Fine-tuning large screens) --- */
+/* ------------------------------------------------------------------ */
+
+/* Max Width 1300px (Small desktop width adjustments) */
+@media screen and (max-width: 1300px) {
+    .nav>.mv-menu>a {
+        font-size: 16px;
+    }
+
+    .nav {
+        width: 55%;
+    }
+
+    button {
+        width: 170px;
+        font-size: 20px;
+    }
+
+    .button-tab {
+        width: 100%;
+    }
+}
+
+/* Max Width 1050px (Desktop/Large Tablet Adjustments) */
+@media screen and (max-width: 1050px) {
+    .nav>.mv-menu>a {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .support-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .support-section h3 {
+        font-size: 24px;
+    }
+
+    .support-question {
+        font-size: 1.5rem;
+    }
+
+    .support-answer-list li {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .information-details p,
+    .email-links a {
+        font-size: 1.4rem;
+    }
+}
+
+/* Max Width 850px (Primary Mobile Switch Point) */
+@media screen and (max-width: 850px) {
+
+    /* Mobile Menu Display */
+    .nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 1rem;
+        background: rgba(0, 0, 0, 0.897);
+        backdrop-filter: blur(100px) saturate(1000%);
+        -webkit-backdrop-filter: blur(100px) saturate(1000%);
+        opacity: 0;
+        transition: opacity ease-in-out .3s;
+        z-index: 100;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .logo {
+        width: 150px;
+        height: 35px;
+        margin-left: .6rem;
+        z-index: 2;
+    }
+
+    .nav>.mv-menu>a {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+
+    .mv-menu {
+        height: 60%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: rgba(0, 0, 0, 0.189);
+    }
+
+    .nav.nav-active {
+        display: flex;
+        opacity: 1;
+    }
+
+    /* Content Height/Margin Adjustments */
+    .about-author {
+        margin-top: 50px;
+    }
+
+    .contact-form {
+        margin-top: 50px;
+    }
+
+    .support-section {
+        padding: 0;
+    }
+
+    .support-section .container {
+        margin: 15px;
+        padding: 20px;
+    }
+}
+
+/* Max Width 600px (Extra Small Devices / Phones) */
+@media only screen and (max-width: 600px) {
+
+    /* Header/Nav */
+    .header {
+        height: 60px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 30px;
+        margin-left: 0.5rem;
+    }
+
+    .mobile-menu-btn {
+        width: 25px;
+        height: 25px;
+        margin-right: 1rem;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav>.mv-menu>a {
+        font-size: 1.2rem;
+    }
+
+    .header-con {
+        width: 100%;
+    }
+
+    /* Typography */
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    /* Layout Overrides */
+    .about-author,
+    .contact-form,
+    .information {
+        max-height: max-content;
+        padding: 50px 0;
+    }
+
+    .about-author-tab,
+    .contact-form-tab {
+        width: 95%;
+    }
+
+    .about-author-1 p,
+    .contact-form-1 p {
+        padding: 0 10px;
+    }
+
+    /* Support Section specific adjustments */
+    .support-section {
+        padding: 60px 0;
+    }
+
+    .support-section .container {
+        padding: 10px;
+    }
+
+    .support-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .support-question {
+        font-size: 1.3rem;
+        margin: 30px 0 10px;
+    }
+
+    .support-answer-list li {
+        font-size: 0.9rem;
+    }
+
+    /* Information Section */
+    .information-details p,
+    .email-links a {
+        font-size: 1rem;
+    }
+}

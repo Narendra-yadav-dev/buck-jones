@@ -1,0 +1,806 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BUCK JONES</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton+SC&amp;family=Cinzel:wght@400..900&amp;family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body cz-shortcut-listen="true">
+        <div class="bg-video" aria-hidden="true">
+            <video id="altVideo" autoplay muted playsinline loop preload="auto"
+                onloadedmetadata="this.playbackRate=0.25;">
+                <source src="videos/background.mp4" type="video/mp4">
+                <img src="images/fallback.jpg" alt="Kazak cover fallback">
+            </video>
+        </div>
+
+        <header class="header">
+            <div class="header-con">
+                <div class="logo">
+                    <img src="images/logo.png" alt>
+                </div>
+                <nav class="nav">
+                    <div class="mv-menu">
+                        <a class="nav-link" href="index.html">HOME</a>
+                        <a class="nav-link"
+                            href="http://buckjones-books.com/">BOOKS</a>
+                        <a class="nav-link" href="support.html">SUPPORT</a>
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                        <a class="nav-link"
+                            href="information.html">INFORMATION</a>
+                    </div>
+
+                </nav>
+                <div class="mobile-menu-btn"><img src="images/menu (3).png" alt>
+                </div>
+            </div>
+        </header>
+        <section class="information">
+            <div class="container-fluid p_text_1">
+                <h2 class="information2-section-title">The basics of 3D graphics
+                    without making your eyes glaze over - just enough to get you
+                    started</h2>
+                <div class="information2-details">
+                    <h3>Getting going</h3>
+                    <p>Video card technology progresses continuously. There's
+                        always something new coming down the pike. You can get a
+                        general idea of the capabilities of a given video card
+                        by checking its technology generation. There's more than
+                        one way to count video card generations but the most
+                        commonly used is the version of DirectX the video card
+                        was designed to support. DirectX is the name for
+                        Microsoft's way of controlling video cards. This page
+                        covers 3D basics for DirectX versions 6 through 10.
+                        DirectX versions are downward compatible with previous
+                        versions. That means that a DirectX 9 card can do all
+                        the things which can be done by a card designed for
+                        DirectX 8 or any earlier version of DirectX. That
+                        assures that newer graphics hardware can run older
+                        graphics programs.</p>
+                    <p>You probably know that the main processor chip in your
+                        computer is called the CPU. It does most of the
+                        computational heavy lifting and makes Intel fabulously
+                        weathly and AMD occasionally marginally profitable. CPUs
+                        are the infinitely flexible computing gizmos which make
+                        your computer capable of doing so many different things.
+                        CPUs are programmable. You just load up the right
+                        program and you can get a CPU to do just about anything.
+                        Video cards have their own main processor chip called a
+                        GPU. NVIDIA and ATI are the biggest makers of the GPUs
+                        you find on video cards. Intel makes most of the
+                        integrated video GPUs you find built into motherboards.
+                        A GPU is not as flexible as a CPU. GPUs are designed
+                        primarily to draw images. A GPU has two very different
+                        jobs: drawing two dimensional graphics (2D) and drawing
+                        three dimensional graphics (3D).</p>
+                    <p>2D graphics are used to do things like draw the user
+                        interface used by Windows XP. Word processors and web
+                        browsers also run in 2D mode. Drawing 2D graphics
+                        consists primarily of copying little prepared images to
+                        the screen, drawing characters from various fonts, and
+                        filling areas of the screens with a color. It's pretty
+                        basic stuff and even very old video cards are powerful
+                        enough to draw 2D graphics at lightning speed. If all
+                        you use is 2D graphics then just about any GPU will
+                        do.</p>
+                    <p>3D graphics are used by games to allow players to move
+                        around within a virtual world (and shoot things, blow
+                        things up, steal things, and all kinds of other fun
+                        stuff). 3D is used by artwork programs to allow artists
+                        to design and view their work. It's also used by many
+                        engineering and architectural programs. Windows Vista is
+                        going to support a 3D user interface. Unlike 2D
+                        graphics, 3D graphics can require an enormous amount of
+                        computations. And however fast a GPU is at 3D, the image
+                        quality could be improved with even more processing
+                        power. Any old GPU can handle most 2D chores but people
+                        always seem to need more 3D drawing power. And even if
+                        it's fast enough for your current 3D programs, new
+                        programs will be released in the near future which will
+                        require even more 3D power.</p>
+                    <h3>Understanding the basics of 3D</h3>
+                    <p>There's an awful lot of arcane 3D terminology: pixels,
+                        vertices, polygons, geometry, shaders, bump mapping,
+                        etcetera, etcetera, etcetera. There's no end to them.
+                        And even if you learned them all, they're already
+                        working on new ones to get you confused all over again.
+                        There are plenty of nice, thick books oozing math which
+                        explain the subject of 3D but the point here is to just
+                        get started on the basics of 3D - not to start writing
+                        your own 3D games. This page is going to simplify things
+                        quite a bit so lots of details will be glossed over.
+                        This is just the basics.</p>
+                    <h3>DirectX 6</h3>
+                    <p>For a frame of reference, let's start with a little GPU
+                        pre-history: DirectX 6. DirectX 6 was released in 1998.
+                        The only way to buy DirectX 6 video cards is from people
+                        selling used or obsolete hardware. Strictly speaking,
+                        the main processing chips on video cards weren't even
+                        called GPUs until DirectX 7. The 3D capabilities of
+                        DirectX 6 cards are very basic. They can draw
+                        vertex-lit, multi-textured, bump-mapped polygons. Don't
+                        worry about it if you don't know what any of that
+                        means.</p>
+                    <img src="images/wireframe.jpg" alt="No Image">
+                    <p>A GPU draws a 3D object by drawing its surface. The shape
+                        of a real-life object's surface can be very complicated.
+                        A GPU can make a pretty good approximation by covering
+                        the entire surface with enough triangles. The image on
+                        the left shows a wireframe model of a table. A wireframe
+                        model shows the edges of the triangles which the GPU
+                        uses to model the surface of the object. There's quite a
+                        few triangles in this model so it may be a little hard
+                        to pick them out individually. But if you look
+                        carefully, you can see each one of them. Taken together,
+                        all of those triangles cover the entire surface of the
+                        table.</p>
+                    <p>Sometimes you may read about 3D models made of polygons
+                        rather than triangles. A polygon is just a flat object
+                        with three or more sides. There are also models made of
+                        higher-order surfaces. Their vertices can define curved
+                        surfaces as well as flat ones. But we're just going to
+                        stick with triangles here. Triangles are as simple as it
+                        gets and that's what's appropriate for this kind of
+                        page. In real life, most people really just work with
+                        triangles anyway. There's a lot to be said for keeping
+                        things as simple as possible.</p>
+                    <p>The top of the table is supposed to be round but it
+                        actually has 24 sides. That was done to reduce the
+                        number of triangles in the table. A table model with a
+                        larger number of triangles could have a shape which is
+                        virtually indistinguishable from the real thing. The
+                        model above has about as many triangles as you would
+                        expect from a pretty nice table found in a game of the
+                        DirectX 6 era. Games have to limit the number of
+                        triangles because they have to repeatedly redraw the
+                        screen image quickly to allow the game to be responsive.
+                        Games need a frame rate of about 30 frames per second or
+                        they feel sluggish. That means a game has to redraw its
+                        entire 3D scene 30 times a second (or more). And there's
+                        usually lots more on the screen than just one table. If
+                        you've ever played an older game and winced when looking
+                        at the bizarre-looking head of a space marine which
+                        appears to be made of blocks, now you know why. That's
+                        also why games have so many crates lying around. Crates
+                        use very few triangles.</p>
+                    <p>If you're doing 3D artwork then your table model can have
+                        far more triangles. Artists tend to be more interested
+                        in image quality than they are in drawing speed so their
+                        version of the table is going to look much nicer than
+                        the one shown above.</p>
+                    <p>You can define the position of a triangle by specifying
+                        the position of each of its three corners. Each of those
+                        corners is called a vertex. Vertices is the plural form
+                        of vertex. Blame the Greeks. (Does anyone actually use
+                        the word "datum"?) The term "geometry" is used to
+                        describe a whole lot of vertices. The table's geometry
+                        really just means a list of the vertices which define
+                        the shape of its surface. Vertices are not required to
+                        stay at a fixed position. They can move. You can animate
+                        the table by moving the positions of some of the
+                        vertices. You can make the table appear to wobble by
+                        keeping the 16 vertices at the bottom of the legs at
+                        fixed positions while moving all the other vertices in
+                        the table in one direction or another. Or you can make
+                        the table walk by moving various parts of the geometry
+                        in the appropriate directions. In a DirectX 6 video
+                        card, the CPU is responsible for doing that kind of
+                        computation. The GPU can't do it on it's own.</p>
+                    <p>Some really ancient games used to display wireframe
+                        models. They're pretty easy to draw. But the object
+                        doesn't start looking real until you put a skin on it.
+                        The version of the table on the right has texture maps
+                        stuck to the surfaces of the triangles. A texture map is
+                        an image of something. In this case, the texture map is
+                        an image of a piece of wood. The GPU draws the surface
+                        of each triangle with the image of the wood so it looks
+                        like a table made out of wood. A texture map could be
+                        any kind of image. It could be a picture of a block of
+                        marble or a picture of your cat. Of course, a picture of
+                        your cat would look silly on the surface of a table. But
+                        it would look pretty good if you stuck it to the surface
+                        of a 3D model of your cat. If you stick the right kind
+                        of texture map to a model then it can look very
+                        realistic.</p>
+                    <p>If you look carefully at the table on the right, the
+                        light in the image appears to be coming from above and
+                        to the right of the table. Without that light, the image
+                        of the table would look flat and unrealistic. That light
+                        is implemented with a technique called vertex lighting.
+                        Vertex lighting considers the position of the (virtual)
+                        light and the position of the viewer (where you would be
+                        standing to see the image that it's drawing) and then it
+                        calculates how bright the light should be at each
+                        vertex. That tells the GPU how bright each of the three
+                        corners of each triangle should be. When the GPU draws
+                        the triangle it makes each corner as bright as the
+                        vertex lighting decided it should be and then it fills
+                        in the rest of the triangle to make smooth transitions
+                        between any lighting differences at the corners. If one
+                        corner is brighter than the other two then the triangle
+                        will appear to be brighter at that vertex and then get
+                        gradually darker as it gets closer to the other two
+                        corners. And it's not just limited to one light. It can
+                        do the same calculation for multiple lights although
+                        that takes more computations. It can also use colored
+                        lights and do other interested lighting effects. This
+                        kind of lighting looks pretty good considering how
+                        simple it is. It just calculates some lighting
+                        information at each vertex and then the GPU fills it in
+                        for the rest of the triangle.</p>
+                    <p>DirectX 6 can also combine other things called light maps
+                        which make the surface of the 3D object lighter or
+                        darker. Light maps can be used to make shadows. Some
+                        games go a bit overboard with shadows to make a spooky
+                        environment as seen in the screenshot on the left. There
+                        are also bump maps which make the surface of an object
+                        look bumpy even though the surface is still just a bunch
+                        of perfectly flat triangles. You can see earth with a
+                        bump map applied in the lower right image. There's other
+                        kinds of maps too. Along with texture maps, they're all
+                        just various kinds of images applied to the surface of
+                        the model to make it look more realistic.</p>
+                    <p>Texture maps (and the other kinds of maps) are really
+                        just a way to substantially reduce the amount of
+                        computations required to draw something. A GPU would
+                        have to work very hard to actually draw the real surface
+                        of that table including all the subtle grain in the
+                        wood's surface. That table isn't really perfectly flat.
+                        But a GPU can draw a very realistic approximation by
+                        using a relatively small number of triangles and
+                        sticking a picture of some wood to the surface. And then
+                        it can apply a bump map to make it look like there's
+                        actual wood grain on the surface of the table. That's a
+                        theme you see over and over in 3D graphics: it's all
+                        about finding ways to "cheat" on the computations.
+                        Really drawing the surface of the object can require
+                        spectacular amounts of computations so video cards find
+                        ways to approximate them without doing all that work.
+                        Those methods often involve the clever use of various
+                        kinds of precalculated maps which can be used to quickly
+                        simulate a complex surface without going to the trouble
+                        of recomputing it each time it's drawn.</p>
+                    <h3>DirectX 7</h3>
+                    <p>DirectX 7 was released in 1999. As of late 2006, there
+                        are still DirectX 7 video cards for sale as extreme
+                        low-cost cards. Their 3D drawing capabilities are quite
+                        a step up in performance from DirectX 6. The DirectX 7
+                        video card which really got people's attention was
+                        NVIDIA's GeForce 256. That's when the term "GPU" started
+                        being used. In fact, GPU was a term originally pushed by
+                        NVIDIA's marketing department. But soon everyone was
+                        delivering the same kind of functionality and GPU became
+                        a generic term.</p>
+                    <p>To display the images shown earlier requires that a lot
+                        of computations be done for each vertex. You have to
+                        move some of the vertices to animate things. You have to
+                        figure out where each vertex appears on the screen. You
+                        have to calculate the lighting at each vertex (at least,
+                        that's how it's usually done). Then once you've done all
+                        the vertex calculations, you have to display all the
+                        visible triangles. In DirectX 6, the CPU does all vertex
+                        calculations and the GPU is only responsible for
+                        displaying the triangles. Those vertex calculations can
+                        really tax a CPU if you want to make nice looking models
+                        which are made out of lots of triangles.</p>
+                    <p>DirectX 7 introduced hardware transforms and lighting
+                        (hardware T&L). The "transform" part refers to
+                        calculations which involve the position of the vertices
+                        and the lighting part refers to the lighting
+                        calculations done for each vertex. GPUs with hardware
+                        T&L can do their own vertex calculations rather than
+                        dump that responsibility on the CPU. That's a good thing
+                        because CPUs of that era weren't all that fast. If the
+                        hardware T&L in a GPU is fast then it allows you to
+                        build models out of a larger number of smaller triangles
+                        so their shapes are more realistic. The space marines in
+                        all those video games don't have to have heads shaped
+                        like blocks anymore. And the lighting often looks better
+                        for objects which are made out of smaller triangles.
+                        Basically, more triangles look better but more triangles
+                        means more vertex calculations. Hardware T&L lets you
+                        use more triangles.</p>
+                    <h3>Life before shaders</h3>
+                    <p>To understand how important shaders are, you have to look
+                        back at the previous versions of DirectX. DirextX 7 and
+                        earlier versions use what's known as a fixed-function 3D
+                        pipeline. Personally, I prefer to call it
+                        "bag of tricks" 3D. Let's look in detail at one specific
+                        kind of trick. But before that, you need to know a
+                        little terminology. An image is actually made up of a
+                        bunch of tiny little boxes, each of which contain a
+                        single color. Those little boxes are called pixels.
+                        Pixel is short for picture element. If you take a
+                        picture of your dog with an old digital camera, it may
+                        take the picture with a resolution of 640 by 480 pixels.
+                        That means that the image of your dog is really a two
+                        dimensional array of pixels which is 640 pixels wide and
+                        480 pixels tall. That's a total of 307,200 pixels. Each
+                        of those little pixels contains only one color but it
+                        looks pretty much like your dog (if you have a decent
+                        camera). We need a way to keep track of the color of a
+                        pixel. One way to represent any color we can see is to
+                        break that color into three separate components: a red
+                        component, a green component, and a blue component. When
+                        you bump into "RGB", that's what they're talking about:
+                        red, green, and blue. Each color component has a value
+                        between 0.0 and 1.0. A red component value of 1.0 means
+                        it's fully red. A red value of 0.5 means it's half red
+                        and 0.0 means it's not red at all. Green and blue also
+                        have their own values which range from 0.0 for no color
+                        to 1.0 for full color. For example, a color with a red
+                        of 0.8, a green of 0.6, and a blue of 0.4 gives you a
+                        color which is light brown. You get dark cyan when red
+                        is 0.0, green is 0.4 and blue is 0.4. You get a bright
+                        cyan when red is 0.0 and both green and blue are 1.0.
+                        You can represent any color this way. Color component
+                        values closer to 1.0 result in brighter colors and
+                        values closer to 0.0 result in darker colors. If you're
+                        interested, you can read more about this subject on this
+                        page. But basically, all you have to do is keep 3
+                        separate numbers which range from 0.0 to 1.0 to keep
+                        track of a single color. So that picture of your dog is
+                        actually a long list of numbers. It's a list of 307,200
+                        pixels, each of which keeps track of its color with
+                        three values which range between 0.0 and 1.0.</p>
+                    <p>So now let's examine one of the tricks in that bag. Take
+                        another look at the dark, shadowy game screenshot shown
+                        above. The surface shape of that room is modeled with
+                        triangles just like our table. They're just in the shape
+                        of a room rather than a table. And all the walls,
+                        ceilings, floor, etc. in the room are covered with
+                        various grungy industrial texture maps just like the
+                        wood texture map covers our table. But that room has
+                        dark and light parts. And some parts of the room turn
+                        light and dark when the lights flicker. (Lights in this
+                        kind of video game rarely seem to work properly.) When a
+                        video card draws our table it just covers it with the
+                        wood texture map. And in the case of the textured table
+                        image above, it does some simple vertex lighting to make
+                        it look nice. But that grungy game room has far more
+                        complicated lighting and shadows that you can do with
+                        vertex lighting given that the room is built out of
+                        rather large triangles. If a wall is built out of two
+                        triangles, you can't use vertex lighting to cast
+                        interesting shaped shadows and multiple spot lights onto
+                        the wall. All vertex lighting can do is control the
+                        lighting at the corner of the triangles and then the GPU
+                        fills in the lighting in between the corners. So to draw
+                        that grungy room with interesting lighting and shadows
+                        but still use a small number of triangles you need
+                        another approach. When the GPU draws the wall of that
+                        grungy game room, it actually uses two maps: the grungy
+                        industrial wall texture map, and a light map which
+                        contains an overlapping image of where the shadows are.
+                        The GPU mathmatically combines the wall texture map with
+                        the light map which contains the shadow to create the
+                        final shadowy wall.</p>
+                    <p>You can see that a little easier in the image shown
+                        above. The image on the left is the texture map which
+                        covers part of the wall. I've changed it to brick
+                        because I've played enough action games that I'm sick of
+                        the grungy industrial look. The texture map is fully lit
+                        so it doesn't have any shadows. The light map in the
+                        middle controls which parts of the wall are light or
+                        dark. This particular light map has two light areas
+                        which might be caused by two spot lights and the rest of
+                        the map is in shadows. The image on the right shows the
+                        resultant image when the GPU combines the texture map
+                        with the light map. It looks like a couple of lights
+                        shining on our brick wall. Remember that the pixels in
+                        our brick texture map are made up of three components:
+                        red, green, and blue. Each of those are values which
+                        vary between 0.0 and 1.0. The light map is actually a
+                        monochrome image so it only contains one component
+                        (white) but it still varies from 0.0 to 1.0. The way the
+                        GPU combines the brick texture map with the light map is
+                        actually quite simple. All it does is take each of the
+                        three color components from a pixel in the texture map
+                        and then multiply them by the corresponding pixel value
+                        in the light map. That's it. It's just one
+                        multiplication. The light map contains a value like 0.3
+                        for parts of the wall which are in shadow. If you take
+                        the three color components of one spot in the brick wall
+                        texture map and multiply each by 0.3 then you end up
+                        with a darkened final color. The light map contains 1.0
+                        for parts of the wall which are not in shadow. When you
+                        multiply a color from the brick texture map by 1.0 then
+                        you end up with the same color. So for each spot in the
+                        texture map, the GPU multiplies in the corresponding
+                        spot in the light map and it ends up with a final color
+                        which is darkened in the shadowy parts of the wall and
+                        fully lit in the unshadowed parts of the wall.
+                        Mathmatically speaking, the texture map times the light
+                        map equals the final result.</p>
+                    <p>One little multiply done for each pixel in the wall
+                        texture map can create all kinds of cool shadows. But
+                        the point of that long-winded explanation was to show
+                        how something like a shadow is actually just a simple
+                        bit of arithmetic on the red, green, and blue color
+                        components. All you have to do to darken a color is to
+                        multiply it by a number less than 1.0. Multiplying by
+                        0.8 darkens a color a little and multiplying by 0.2
+                        darkens it a lot. That's one little math trick in the
+                        GPU's bag of tricks: multiplying a texture map by a
+                        light map to create shadows. There are many other kinds
+                        of tricks. You'd be amazed what cool effects you can do
+                        with a few multiplies and adds. That bump-mapped earth
+                        image up above is a slightly more complicated
+                        calculation where the GPU does some math to combine a
+                        texture map with a bump map. If you do some adds and
+                        multiplies on a texture map and a bump map then you end
+                        up with color changes which look like bumps. There are
+                        other kinds of tricks to make objects shiny. There's one
+                        trick which which combines a texture map and with
+                        another kind of map to draw objects which appear to
+                        reflect their surroundings. There's a trick for every
+                        need and a bag to hold 'em all.</p>
+                    <h3>Oboy! It's time for shaders</h3>
+                    <p>Everywhere you look in video card land you come across
+                        the term shader. There are pixel shaders, vertex
+                        shaders, and someday soon you'll have geometry shaders.
+                        Shaders, shaders, shaders. What's all the fuss about
+                        shaders? The old bag of tricks GPU design requires you
+                        to find a way to combine a bunch of pre-designed math
+                        tricks to get the desired visual effect. You apply one
+                        math trick with a texture map and a light map to create
+                        interesting lighting. Then you apply another trick with
+                        a bump map to make the surface appear bumpy. And there's
+                        lots of other tricks we haven't covered. You apply one
+                        trick after another to get the effect that you want but
+                        you're stuck using tricks designed by someone else and
+                        everyone is stuck selecting from the same bag of tricks.
+                        That's why all 3D images drawn with the same bag of
+                        tricks tend to look kind of similar. And if you want a
+                        trick that isn't in the bag then you're out of luck.</p>
+                    <p>Goodbye bag of tricks. Hello shaders. The new shader GPU
+                        design allows you to write a simple program called a
+                        shader which runs on the GPU and do any little
+                        mathematical calculation that your heart desires. Shader
+                        based GPUs are programmable - very much like the CPU on
+                        your motherboard is programmable. You can get a shader
+                        GPU to do almost any calculation just by loading up the
+                        appropriate shader program. Goodbye, pre-fabbed bag of
+                        tricks; hello making up your own tricks. It's no wonder
+                        that nerds are in such a lather over these things.</p>
+                    <p>Drawing shadows, bumpy surfaces, shiny surfaces, and that
+                        sort of thing involves one particular kind of shader:
+                        the pixel shader. A pixel shader is a little program
+                        which runs on the GPU which calculates the color of one
+                        pixel. It can do all the standard things like access
+                        texture maps, lighting maps, and other kinds of maps and
+                        then do a little mathematical calculation to compute the
+                        color of the resultant pixel. It can do all of the
+                        tricks which were in that old bag and then some. The old
+                        tricks just did the same calculation for each set of
+                        pixels, but the more advanced kinds of pixel shaders can
+                        do a different calculation for each pixel. The new pixel
+                        shaders are so flexible that it's pretty hard to predict
+                        what GPU programmers will be able to do with these
+                        things. For the moment, they seem satisfied to make the
+                        toxic waste in their post-apocalyptic industrial
+                        wastelands look shinier, undulate more, and display
+                        better reflections of the surrounding crumbling
+                        buildings. Oh yes... and the mutants have more realistic
+                        looking skin. Yup. Oozing pores make all the difference
+                        when you're drawing a mutant. When people talk about the
+                        wonderful things which will happen with shaders, they're
+                        usually talking about unimagined things which will
+                        happen in the future. That sounds more impressive than
+                        things which are just shinier and bumpier right now. But
+                        you have to keep in mind that every now and then someone
+                        comes up with a cool new visual effect. I can remember
+                        when they came up with texture maps. Yes... There was
+                        life before texture maps. But it didn't look very good.
+                        And then they came up with light maps, bump maps,
+                        environment maps, etc. And most of the times they came
+                        up with a new trick, they had to build a new generation
+                        of hardware to draw it quickly. Shaders dispense with
+                        all of that. With shaders, you can create almost any
+                        effect and run it on the shader-based GPUs people
+                        already have. You don't need a new video card to use
+                        that new effect. If it does a lot of computation then
+                        you might have to reduce the screen resolution to keep
+                        it drawing quickly, but at least it will be able to do
+                        it. So shaders aren't just about slightly better-looking
+                        toxic waste. They're about the flexibility to support
+                        whatever effects folks think up in the future.</p>
+                    <p>This has been primarly about pixel shaders but there's
+                        another kind of shader called a vertex shader. Vertex
+                        shaders do computations for each vertex. They are little
+                        programs which run on the GPU but they run once for each
+                        vertex rather than once for each pixel. They can be used
+                        to animate 3D models by moving vertices around. Vertex
+                        shaders can bend the fingers of that mutant to make an
+                        obscene gesture. They can make his face grimace. They
+                        can make the flesh hanging off a zomby quiver. Ahem... I
+                        guess I've played too many action games. Okay, vertex
+                        shaders can make flags wave and faces smile. They can
+                        make that crummy wavy effect when a character on a TV
+                        show starts imagining something, then the screen gets
+                        wavy, and then the show flashes back to when it happens.
+                        Vertex shaders can also do computations which improve
+                        how things in a 3D scene are lit. You can use vertex
+                        shaders to do all of the things done by hardware T&L but
+                        vertex shaders allow you to do any computations you want
+                        rather than just hard-wired tricks. There's even a new
+                        kind of shader coming out with DirectX 10 called a
+                        geometry shader. It's kind of like a vertex shader
+                        except it can operate on large groups of vertices at a
+                        time. A vertex shader works on one vertex in a table.
+                        The geometry shader can work on the entire table. In
+                        fact it can even create and modify tables.</p>
+                    <p>Each pixel shader program runs on a pixel shader unit.
+                        (We don't call them PSUs because power supplies already
+                        have dibs on the term PSU.) There's one thing you need
+                        to remember about pixels: there's lots of them. Heaping
+                        gobs of them, in fact, so you need lots of pixel shader
+                        units in order to run those pixel shader programs for
+                        each and every pixel. Or, you can reduce the screen
+                        resolution so there's less pixels to draw. But who wants
+                        to do that? Running even a short program for each and
+                        every pixel in an image requires an enormous amount of
+                        computional power. There usually aren't as many vertices
+                        on the screen as pixels but there's still a lot of them.
+                        And the kinds of computations a shader does on a vertex
+                        usually involve more calculations than the ones done on
+                        a pixel. So both pixel and verter shaders require a lot
+                        of hardware to be able to run quickly. That's why you
+                        see newer video cards with ever increasing numbers of
+                        pixel and vertex shaders units.</p>
+                    <p>DirectX has a separate numbering system to keep track of
+                        the various versions of shaders. Shaders have more
+                        features added over time (as with everything else in
+                        computers) so they need version numbers to specify what
+                        they can do. When you look at video card specifications
+                        you'll sometimes see it listed as "SM 2.0" which stands
+                        for shader model version 2.0. More often you'll see PS
+                        2.0 and VS 2.0 which stand for pixel shader 2.0 and
+                        vertex shader 2.0. There are two separate numbers
+                        because some video cards have pixel and vertex shaders
+                        with different model numbers. The various DirectX shader
+                        model numbers are listed on this page.</p>
+                    <h3>DirectX 8</h3>
+                    <img src="images/chameleon.jpg" alt="No Image">
+                    <p>DirectX 8 was introduced in 2000. It was the first
+                        version of DirectX which supported programmable vertex
+                        and pixel shaders. To graphics geeks, the introduction
+                        of shaders was a big deal. But DirectX 8's
+                        implementation still came with some limitations. For
+                        one, the shader programs had to be very short. Secondly,
+                        the pixels used by DirectX 8 didn't store enough
+                        information to maintain very accurate colors. If a pixel
+                        shader computation was very complex, the resultant color
+                        could end up being quite inaccurate. Each step in the
+                        computation caused the color to be less accurate. Long
+                        pixel computations could end up with some very visible
+                        errors. The DirectX 8 pixel shaders also limited how
+                        much the computation could vary from pixel to pixel.
+                        DirectX 8 shaders were more flexible than anything
+                        provided by previous versions of DirectX, but they still
+                        had limitations which prevented programmers from doing
+                        everything they wanted. Some advanced effects work fine
+                        in DirectX 8 pixel shaders and others aren't possible.
+                        They're good enough to draw shiny, animated chameleons.
+                        (There's more to life than mutants, after all.) But
+                        DirectX 8 pixel shaders still have enough limitations
+                        that you can't do everything you'd like to do with
+                        them.</p>
+                    <p>As of the end of 2006, there are still some DirectX 8
+                        video cards on the market. It's best to avoid buying
+                        these cards because of the limitations on DirectX 8's
+                        pixel shader implemention. Truely flexible shaders
+                        didn't arrive until DirectX 9 so many programs provide
+                        limited support for DirectX 8 shaders.</p>
+                    <h3>DirectX 9</h3>
+                    <img src="images/9700balls.jpg" alt="No Image">
+                    <p>DirectX 9 arrived at the end of 2002. It eliminated most
+                        of the important limitations of DirectX 8 shaders.
+                        DirectX 9 introduced high precision pixel colors which
+                        allows pixel shaders to do long series of computations
+                        without hurting the accuracy of the final colors. The
+                        pixel shaders also are more capable of changing what
+                        kinds of calculations they do on a per pixel basis. The
+                        same pixel shader can do different things for different
+                        pixels or change what kind of computation is does based
+                        on just about anything. DirectX 9 was when pixel shaders
+                        really arrived on the scene. The pixel and vertex
+                        shaders which arrived with DirectX 9 are considered to
+                        be the first general purpose shader implementation. The
+                        DirectX 9 card which got everyone's attention was the
+                        Radeon 9700 Pro. It was like the GeForce 256: one of
+                        those cards which heralded the beginning of a new
+                        generation.</p>
+                    <p>The more advanced kinds of shaders have actually become
+                        sufficiently flexible that they can be used to do
+                        computations which have nothing with graphics. Many
+                        computer owners donate their spare CPU cycles to various
+                        kinds of distributed computing projects. There are
+                        distributing computing projects to find extremely large
+                        prime numbers, look for signs of extraterrestrial
+                        intelligence, and calculate how proteins fold. These
+                        projects require enormous amounts of computing power so
+                        they chop their gigantic workload into lots of smaller
+                        workloads and then run them on millions of people's home
+                        computers when they're not in use. All of those home
+                        computers working together on a single problem get it
+                        done far faster than the most powerful supercomputers.
+                        That's where shaders come in. The more recent shader
+                        implementations (usually DirectX 9 and up) can be used
+                        to compute those same workloads using the video card's
+                        GPU instead of the CPU. And the right video cards can
+                        use shaders to do it many times faster than the CPU.</p>
+                    <h3>DirectX 10</h3>
+                    <p>DirectX 10 will be introduced in early 2007. DirectX 10
+                        will introduce geometry shaders. Those are the shaders
+                        which can work on or create groups of vertices. Previous
+                        versions of DirectX have required the CPU to do quite a
+                        bit of work to switch from drawing one kind of object to
+                        another. That puts a limit on the number of different
+                        objects you can put on the screen at one time. DirectX
+                        10 significantly reduces the CPU overhead of that
+                        switching. The most visible result will be lots more of
+                        various kinds of objects on the screen. It could be lots
+                        more trees which all look different, ground covered with
+                        real blades of grass, or a a room filled with lots of
+                        objects as opposed to the fairly empty 3D rooms we're
+                        used to looking at. Or it could just be lots more
+                        radioactive rubble for the mutants to run around in. It
+                        will result in more realistic worlds (hopefully not all
+                        zomby-infested post-apocalyptic dystopias).</p>
+                    <p>Another thing which is appearing at the same time as
+                        DirectX 10 is the unified shader architecture. There's
+                        nothing in DirectX 10 which requires a GPU to use this
+                        new design but both ATI and NVIDIA are using it so most
+                        of the fast DirectX 10 video cards sold will have it.
+                        Motherboards with built-in integrated video probably
+                        won't be using this new design for some time. That's too
+                        bad because it's a really good idea.</p>
+                    <p>First let's talk about un-unified shader architectures. A
+                        conventional video card might have 24 pixel shader units
+                        and 8 vertex shader units. A large portion of the GPU
+                        silicon chip is dedicated just to the 24 pixel shader
+                        units. Another portion of the chip is used up by the
+                        vertex shader units. The pixel shader part of the chip
+                        can only do pixel calculations and the vertex shader
+                        part of the chip can only do vertex calculations. If
+                        you're running a program which needs lots of pixel
+                        shader calculations but very few vertex shader
+                        calculations, then the pixel shader part of the chip is
+                        running at full speed but the vertex shader part of the
+                        chip spends part of its time doing nothing. Likewise, a
+                        program which has lots of vertex work but little pixel
+                        work will leave the pixel shader units idle sometimes.
+                        That's wasteful. And it can be a real problem because
+                        many 3D programs have wildly varying numbers of vertices
+                        on the screen depending on what you're looking at.
+                        Sometimes the geometry is extremely complex and other
+                        times it isn't. There's no way to pick a ratio of pixel
+                        shader hardware to vertex shader hardware which will
+                        always be running at full speed.</p>
+                    <p>Unified shader hardware is the solution to this problem.
+                        Remember that pixel shaders are just running a bunch of
+                        simple math programs made mostly of multiplies and adds
+                        to calculate a color component. Vertex shaders are also
+                        running a bunch of simple math programs made mostly of
+                        multiplies and adds except to vertices. Back in DirectX
+                        8, vertices were represented with large accurate values
+                        but color components (the red, green, and blue parts
+                        which make up pixels) were represented with much
+                        smaller, less accurate values. So the pixel shaders only
+                        had to multiply and add small values whereas vertex
+                        shaders had to do work on much larger ones. The two
+                        kinds of computation hardware had very little in common.
+                        But with this generation of video cards most of the
+                        color components are represented with the same high
+                        precision as the vertices. They're both working on the
+                        same size values. In case you're interested, it's 32 bit
+                        floating point.</p>
+                    <p>A unified architecture has one large group of computation
+                        units. Most of the hardware in these units is dedicated
+                        to working on those high precision values. But they can
+                        be used by pixel shaders, vertex shaders, and the new
+                        geometry shaders. They are no longer dedicated to only
+                        one kind of shader. If a program's load is 90 percent
+                        pixel calculations and 10 percent vertex calculations
+                        then that's how they are used and all of the unified
+                        computation units will be busy. If it's 10 percent
+                        pixels and 90 percent vertices then they'll be allocated
+                        that way and they'll still all be busy. A portion of
+                        your GPU will no longer be slacking off instead of doing
+                        something useful. The shader universe will finally
+                        attain balance. That's a very good thing.</p>
+                </div>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById("kazakVideo");
+            const playPauseBtn = document.getElementById("playPauseBtn");
+            const muteBtn = document.getElementById("muteBtn");
+            const volUpBtn = document.getElementById("volUpBtn");
+            const volDownBtn = document.getElementById("volDownBtn");
+
+            let soundEnabled = false;
+            video.volume = 0.8; // Start with 30% volume
+            video.muted = true; // muted until first interaction
+
+            // Wait for first click or scroll to enable sound
+            const enableSound = () => {
+                if (!soundEnabled) {
+                    video.muted = false;
+                    soundEnabled = true;
+                    video.play().catch(err => console.log("Autoplay blocked:", err));
+                    document.removeEventListener("click", enableSound);
+                    document.removeEventListener("scroll", enableSound);
+                }
+            };
+            document.addEventListener("click", enableSound);
+            document.addEventListener("scroll", enableSound);
+
+            // Intersection Observer (auto play/pause when visible)
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
+                            if (soundEnabled) video.play();
+                            playPauseBtn.textContent = "Pause";
+                        } else {
+                            video.pause();
+                            playPauseBtn.textContent = "Play";
+                        }
+                    });
+                },
+                { threshold: [0.6] }
+            );
+            observer.observe(video);
+
+            // Play/Pause control
+            playPauseBtn.addEventListener("click", () => {
+                if (video.paused) {
+                    video.play();
+                    playPauseBtn.textContent = "Pause";
+                } else {
+                    video.pause();
+                    playPauseBtn.textContent = "Play";
+                }
+            });
+
+            // Mute toggle
+            muteBtn.addEventListener("click", () => {
+                video.muted = !video.muted;
+                muteBtn.textContent = video.muted ? "Unmute" : "Mute";
+            });
+
+            // Volume up
+            volUpBtn.addEventListener("click", () => {
+                video.volume = Math.min(video.volume + 0.1, 1);
+                console.log("Volume:", video.volume);
+            });
+
+            // Volume down
+            volDownBtn.addEventListener("click", () => {
+                video.volume = Math.max(video.volume - 0.1, 0);
+                console.log("Volume:", video.volume);
+            });
+        });
+    </script>
+
+    </body>
+
+</html>

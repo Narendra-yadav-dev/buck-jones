@@ -1,0 +1,170 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BUCK JONES</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton+SC&amp;family=Cinzel:wght@400..900&amp;family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body cz-shortcut-listen="true">
+        <div class="bg-video" aria-hidden="true">
+            <video id="altVideo" autoplay muted playsinline loop preload="auto"
+                onloadedmetadata="this.playbackRate=0.25;">
+                <source src="videos/background.mp4" type="video/mp4">
+                <img src="images/fallback.jpg" alt="Kazak cover fallback">
+            </video>
+        </div>
+
+        <header class="header">
+    <div class="header-con">
+      <div class="logo">
+        <img src="images/logo.png" alt="" height="auto" width="100%">
+      </div>
+      <nav class="nav">
+        <div class="mv-menu">
+          <a class="nav-link" href="index.html">HOME</a>
+          <a class="nav-link" href="http://buckjones-books.com/">BOOKS</a>
+          <a class="nav-link" href="support.html">SUPPORT</a>
+          <a class="nav-link" href="about.html">ABOUT</a>
+          <a class="nav-link" href="contact.html">CONTACT</a>
+          <a class="nav-link" href="information.html">INFORMATION</a>
+        </div>
+      </nav>
+      <div class="mobile-menu-btn"><img src="images/menu (3).png" alt>
+      </div>
+    </div>
+  </header>
+        <div class="banner">
+    <div class="banner-con">
+      <img src="images/logo-img.gif" height="150px">
+      <img src="images/slider.png" height="150px" width="89%" style="object-fit: cover; border-radius: 0 10px 10px 0px;">
+    </div>
+  </div>
+        <section class="information">
+            <div class="container-fluid p_text_1">
+                <h2 class="section-title">INFORMATION</h2>
+                <div class="information-details">
+                    <p>Ethernet and wireless systems large and small. We can do
+                        it all! Internet passage? Your place or mine — all work
+                        guaranteed.</p>
+
+                    <h3>Information is Power</h3>
+                    <a href="information1.html" class="info-link">>> Information Articles <<</a>
+                    <p class="status-text">All articles are under construction
+                        right now</p>
+
+                    <ul class="info-list">
+                        <li>1 Bit = Binary Digit</li>
+                        <li>8 Bits = 1 Byte</li>
+                        <li>1024 Bytes = 1 Kilobyte</li>
+                        <li>1024 Kilobytes = 1 Megabyte</li>
+                        <li>1024 Megabytes = 1 Gigabyte</li>
+                        <li>1024 Gigabytes = 1 Terabyte</li>
+                        <li>1024 Terabytes = 1 Petabyte</li>
+                        <li>1024 Petabytes = 1 Exabyte</li>
+                        <li>1024 Exabytes = 1 Zettabyte</li>
+                        <li>1024 Zettabytes = 1 Yottabyte</li>
+                        <li>1024 Yottabytes = 1 Brontobyte</li>
+                        <li>1024 Brontobytes = 1 Geopbyte</li>
+                    </ul>
+
+                    <a href="information2.html" class="sub-heading">Look here for more articles as I write them on computer subjects</a>
+
+                    <p class="email-label">EMAIL:</p>
+                    <div class="email-links">
+                        <a href="mailto:Buck@4Buck.com">Buck@4Buck.com</a>
+                        <a
+                            href="mailto:Buck@buckjones.net">Buck@buckjones.net</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById("kazakVideo");
+            const playPauseBtn = document.getElementById("playPauseBtn");
+            const muteBtn = document.getElementById("muteBtn");
+            const volUpBtn = document.getElementById("volUpBtn");
+            const volDownBtn = document.getElementById("volDownBtn");
+
+            let soundEnabled = false;
+            video.volume = 0.8; // Start with 30% volume
+            video.muted = true; // muted until first interaction
+
+            // Wait for first click or scroll to enable sound
+            const enableSound = () => {
+                if (!soundEnabled) {
+                    video.muted = false;
+                    soundEnabled = true;
+                    video.play().catch(err => console.log("Autoplay blocked:", err));
+                    document.removeEventListener("click", enableSound);
+                    document.removeEventListener("scroll", enableSound);
+                }
+            };
+            document.addEventListener("click", enableSound);
+            document.addEventListener("scroll", enableSound);
+
+            // Intersection Observer (auto play/pause when visible)
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
+                            if (soundEnabled) video.play();
+                            playPauseBtn.textContent = "Pause";
+                        } else {
+                            video.pause();
+                            playPauseBtn.textContent = "Play";
+                        }
+                    });
+                },
+                { threshold: [0.6] }
+            );
+            observer.observe(video);
+
+            // Play/Pause control
+            playPauseBtn.addEventListener("click", () => {
+                if (video.paused) {
+                    video.play();
+                    playPauseBtn.textContent = "Pause";
+                } else {
+                    video.pause();
+                    playPauseBtn.textContent = "Play";
+                }
+            });
+
+            // Mute toggle
+            muteBtn.addEventListener("click", () => {
+                video.muted = !video.muted;
+                muteBtn.textContent = video.muted ? "Unmute" : "Mute";
+            });
+
+            // Volume up
+            volUpBtn.addEventListener("click", () => {
+                video.volume = Math.min(video.volume + 0.1, 1);
+                console.log("Volume:", video.volume);
+            });
+
+            // Volume down
+            volDownBtn.addEventListener("click", () => {
+                video.volume = Math.max(video.volume - 0.1, 0);
+                console.log("Volume:", video.volume);
+            });
+        });
+    </script>
+
+    </body>
+
+</html>

@@ -17,7 +17,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     /* Define font families used across the site */
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: monospace;
 }
 
 .bg-video {
@@ -39,16 +39,9 @@ body {
 h1,
 h2,
 h3 {
-    font-family: "playfair display", serif;
-    /* Assuming 'display fair' refers to Playfair Display */
     color: white;
     text-transform: uppercase;
     margin: 0;
-}
-
-h2 {
-    /* font-size: 40px; */
-    font-weight: 600;
 }
 
 h3 {
@@ -58,8 +51,6 @@ h3 {
 
 p {
     font-size: 20px;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
     line-height: 35px;
     color: white;
 }
@@ -71,7 +62,6 @@ button {
     max-width: 350px;
     font-size: 20px;
     font-weight: 600;
-    font-family: "poppins", sans-serif;
     text-transform: uppercase;
     background: white;
     border-radius: 5px;
@@ -166,7 +156,6 @@ button:hover {
 
 .logo P {
     font-size: 2.5rem;
-    font-family: "playfair display", serif;
     font-weight: 900;
     margin: 0;
     color: white;
@@ -208,13 +197,15 @@ button:hover {
 
 .nav>.mv-menu>a {
     color: white;
-    font-size: 1.1rem;
+    font-size: 20px!important;
     font-weight: 400;
     text-transform: capitalize;
     text-decoration: none;
-    font-family: "poppins", sans-serif;
 }
-
+.p_font_size_text{
+   font-size: 20px !important;
+        line-height: 40px;
+}
 /* --- HOME PAGE SECTIONS (.banner) --- */
 
 .banner {
@@ -261,8 +252,8 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: rgba(0, 0, 0, 0.329);
-    backdrop-filter: blur(50px);
+    background: rgb(0 0 0 / 58%);
+    backdrop-filter: blur(90px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     gap: 20px;
@@ -328,7 +319,7 @@ img.about-image {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: rgba(0, 0, 0, 0.329);
+    background:rgb(0 0 0 / 58%);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -372,6 +363,7 @@ form {
 }
 
 label {
+    font-size: 20px;
     display: block;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -396,7 +388,7 @@ textarea:focus {
 
 textarea {
     resize: none;
-    height: 80px;
+    /*height: 80px;*/
 }
 
 input::placeholder {
@@ -419,8 +411,8 @@ input::placeholder {
     max-width: 1164px;
     margin: 25px;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.329);
-    backdrop-filter: blur(70px);
+    background: rgb(0 0 0 / 58%);
+    backdrop-filter: blur(90px);
     border-radius: 10px;
 }
 
@@ -431,17 +423,17 @@ input::placeholder {
 }
 
 .support-section p {
-    line-height: 1.8;
-    font-size: 1.1rem;
-    color: #e0e0e0;
+    line-height: 40px;
+    font-size: 20px !important;
+    color: #ffffff;
 }
 .support-section h4 {
     font-size: 25px;
-    color: #e0e0e0;
+    color: #ffffff;
 }
 .support-section ul li {
-    font-size: 25px;
-    color: #e0e0e0;
+    font-size: 15px;
+    color: #ffffff;
 }
 
 .support-question {
@@ -450,7 +442,6 @@ input::placeholder {
     color: white;
     text-align: center;
     margin: 50px 0 20px;
-    font-family: "playfair display";
 }
 
 .support-answer-list {
@@ -464,7 +455,6 @@ input::placeholder {
     font-size: 1.2rem;
     color: white;
     line-height: 1.8;
-    font-family: "poppins";
 }
 
 /* --- INFORMATION PAGE SECTION (.information) --- */
@@ -474,10 +464,11 @@ input::placeholder {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
 }
-
+.text-color_h2{
+    color: white !important;
+}
 .section-title {
     font-size: 3.5rem;
     color: #ffffff;
@@ -550,7 +541,7 @@ input::placeholder {
     max-width: 1600px;
     margin: 25px;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.329);
+    background: rgb(0 0 0 / 58%);
     backdrop-filter: blur(70px);
     border-radius: 10px;
 }
@@ -595,8 +586,19 @@ input::placeholder {
     }
 
     p {
-        line-height: normal;
-        font-size: 15px !important;
+        line-height: 30px;
+        font-size: 18px !important;
+    }
+    .about-text {
+        width: 80%;
+        margin-left: 0 !important; 
+    }
+    .about-image-wrapper img{
+        width: 100%;
+        height: 50%;
+    }
+    .section-title {
+        font-size: 30px;
     }
 
 
@@ -604,10 +606,10 @@ input::placeholder {
 
 .information .container-fluid {
     max-width: 1600px;
-    margin: 25px;
+    margin: 25px 8%;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.329);
-    backdrop-filter: blur(70px);
+    background: rgb(0 0 0 / 58%);
+    backdrop-filter: blur(90px);
     border-radius: 10px;
 }
 /* 2. Min Width 768px (Medium Devices / Landscape Tablets) */
@@ -687,7 +689,12 @@ input::placeholder {
         margin-top: "10px";
     }
     h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .about-author-1 h3{
         font-size: 30px;
+        line-height: 30px;
     }
     p{
         font-size: 15px;
@@ -713,22 +720,38 @@ input::placeholder {
     }
 
     .section-title {
-        font-size: 3.5rem;
+        font-size: 40px;
     }
 
     h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
-    p {
-        font-size: 25px !important;
+    .about-author-tab .about-author-1 p{
+        font-size: 20px !important;
+        line-height: 40px;
     }
 
     .about-author {
         margin-top: 30px;
     }
+    .support-section ul li {
+        font-size: 22px;
+        color: #ffffff;
+    }
+    .about-image-wrapper img {
+        width: 100%;
+        height: 70%;
+    }
 }
-
+.font_size_text{
+    line-height: 30px;
+    font-size: 20px !important;
+}
+.about-image-wrapper img {
+    width: 100%;
+    height: 90%;
+}
 /* ------------------------------------------------------------------ */
 /* --- MAX-WIDTH TWEAKS (Fine-tuning large screens) --- */
 /* ------------------------------------------------------------------ */
@@ -750,6 +773,10 @@ input::placeholder {
 
     .button-tab {
         width: 100%;
+    }
+    .about-image-wrapper img {
+        width: 100%;
+        height: 80%;
     }
 }
 
@@ -789,9 +816,18 @@ input::placeholder {
     }
 
     .section-title {
-        font-size: 3rem;
+        font-size: 30px;
     }
-
+    .information-details ul li {
+        font-size: 20px;
+    }
+    .p_font_size_text {
+        font-size: 17px !important;
+        line-height: 30px;
+    }
+    .information2-details img{
+        width: 100%;
+    }
     .information-details p,
     .email-links a {
         font-size: 1.4rem;

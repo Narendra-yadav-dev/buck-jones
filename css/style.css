@@ -58,7 +58,7 @@ h3 {
 
 p {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     font-family: "Poppins", sans-serif;
     line-height: 35px;
     color: white;
@@ -306,7 +306,8 @@ section#contact {
     margin-right: 3%;
 }
 img.about-image {
-    margin-left: 10px;
+    margin: 35px 0;
+
 }
 
 /* --- CONTACT PAGE SECTION (.contact-form) --- */
@@ -419,7 +420,7 @@ input::placeholder {
     margin: 25px;
     padding: 30px;
     background: rgba(0, 0, 0, 0.329);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(70px);
     border-radius: 10px;
 }
 
@@ -435,9 +436,11 @@ input::placeholder {
     color: #e0e0e0;
 }
 .support-section h4 {
+    font-size: 25px;
     color: #e0e0e0;
 }
 .support-section ul li {
+    font-size: 25px;
     color: #e0e0e0;
 }
 
@@ -491,13 +494,16 @@ input::placeholder {
     line-height: 1.6;
 }
 .information-details h3 {
+    font-size: 25px;
     color: #ffffff;
 }
 .information-details a {
+    font-size: 25px;
     color: #ffffff;
 }
 .information-details ul li {
     list-style: none;
+    font-size: 25px;
     color: #ffffff;
 }
 
@@ -540,6 +546,14 @@ input::placeholder {
     height: 40% !important;
 }
 
+.about-section .about-container {
+    max-width: 1600px;
+    margin: 25px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.329);
+    backdrop-filter: blur(70px);
+    border-radius: 10px;
+}
 .about-author-tab,
 .contact-form-tab {
     flex-direction: column;
@@ -588,6 +602,14 @@ input::placeholder {
 
 }
 
+.information .container-fluid {
+    max-width: 1600px;
+    margin: 25px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.329);
+    backdrop-filter: blur(70px);
+    border-radius: 10px;
+}
 /* 2. Min Width 768px (Medium Devices / Landscape Tablets) */
 @media only screen and (min-width: 768px) {
 
@@ -699,7 +721,7 @@ input::placeholder {
     }
 
     p {
-        font-size: 20px !important;
+        font-size: 25px !important;
     }
 
     .about-author {
